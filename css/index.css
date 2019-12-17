@@ -1,0 +1,1869 @@
+/* 头部开始 */
+
+.header {
+    width: 100%;
+    height: 360px;
+    background: #aaa;
+    position: relative;
+}
+
+
+/* 头部nav */
+
+.header .head-nav {
+    position: relative;
+    height: 78px;
+    z-index: 100;
+}
+
+.header .head-nav .body {
+    padding: 0 272.5px;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header .nav-sub {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('../img/dark60-bg-repeat.png') repeat;
+    width: 100%;
+    /* padding: 88px 0 32px 0; */
+    height: 0;
+    box-sizing: border-box;
+    /* display: none; */
+}
+
+.header .nav-sub.show {
+    height: 98%;
+    transition: height 0.5s;
+}
+
+
+/* logo */
+
+.header .head-nav .body .logo {
+    float: left;
+    margin-top: 10px;
+    width: 132px;
+    height: 49px;
+}
+
+
+/* 导航栏 */
+
+.mainNav {
+    float: left;
+    height: 78px;
+    width: 55%;
+    margin-left: 40px;
+    padding-top: 18px;
+    display: flex;
+}
+
+.mainNav li {
+    flex: 1;
+}
+
+.mainNav li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.mainNav li a span {
+    display: block;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.mainNav li a span:first-child {
+    font-size: 18px;
+    color: #fff;
+}
+
+.mainNav li a span:last-child {
+    font-size: 11px;
+    color: #aeaeae;
+}
+
+
+/* 用户登录区域 */
+
+.userLogin {
+    height: 100%;
+    width: 244px;
+    float: right;
+}
+
+
+/* 头像 */
+
+.userLogin .userAvatar {
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-top: 14px;
+    position: relative;
+    text-align: center;
+    line-height: 48px;
+}
+
+.userLogin .userAvatar img {
+    border-radius: 50%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.userLogin span {
+    background: url('../img/topfoot-spr.png') no-repeat -216px -117px;
+    display: block;
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    top: 0;
+    left: 0;
+}
+
+
+/* 登录 */
+
+.userInfo {
+    float: left;
+    margin-left: 10px;
+    height: 100%;
+    line-height: 78px;
+    color: #fff;
+}
+
+.userInfo p a {
+    color: #fff3d0;
+}
+
+
+/* 手机登录 */
+
+.phone {
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin: 17px 31px 0 0;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.phone a {
+    width: 16px;
+    height: 24px;
+    display: inline-block;
+    background: url('../img/topfoot-spr.png') no-repeat -303px -84px;
+    vertical-align: middle;
+}
+
+.head-search {
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin: 17px 12px 0 0;
+    text-align: center;
+    line-height: 40px;
+}
+
+.head-search i {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: url('../img/topfoot-spr.png') no-repeat -381px -39px;
+    vertical-align: middle;
+}
+
+.phone-hover {
+    width: 211px;
+    height: 178px;
+    position: absolute;
+    top: 68px;
+    right: 450px;
+    background: rgba(0, 0, 0, .8);
+    text-align: center;
+    display: none;
+}
+
+.phone-hover.show {
+    display: block;
+}
+
+.phone-hover img:first-child {
+    display: block;
+    width: 110px;
+    height: 110px;
+    margin: 22px auto 0 auto;
+}
+
+.phone-hover p {
+    color: #cdbe91;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.phone-hover img:last-child {
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+}
+
+
+/* 背景 */
+
+.header .bg {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0
+}
+
+.bg .head-shadow {
+    background: url('../img/dark.png') repeat center top;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 131px;
+    z-index: 1;
+}
+
+.detail {
+    display: block;
+    width: 160px;
+    height: 40px;
+    z-index: 1;
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    margin-left: -20px;
+    border: 1px solid #A67E30;
+    background: rgba(0, 0, 0, .65);
+    color: #A67E30;
+    text-align: center;
+    line-height: 40px;
+}
+
+.current-version {
+    position: absolute;
+    right: 273px;
+    bottom: 28px;
+    font-size: 14px;
+    color: #888787;
+}
+
+.current-version em {
+    color: #f5d185;
+    margin-right: 10px;
+}
+
+.current-version a {
+    display: inline-block;
+    height: 22px;
+    padding: 0 15px;
+    border: 2px solid #f5d185;
+    color: #f5d185;
+    background: rgba(0, 0, 0, .65);
+    line-height: 22px;
+}
+
+
+/* 主题开始 */
+
+.content {
+    text-align: center;
+}
+
+
+/* 轮播图和公告 */
+
+.mainContent {
+    height: 380px;
+    padding-top: 40px;
+    margin: 0 272.5px;
+}
+
+.lf-swiper {
+    width: 820px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    height: 340px;
+}
+
+.lf-swiper .imglist {
+    width: 600%;
+    overflow: hidden;
+    transition: left 0.8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.lf-swiper ul li {
+    float: left;
+}
+
+
+/* 轮播tabbar */
+
+.img-tabbar {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+.img-tabbar li {
+    float: left;
+    width: 164px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background: #e3e2e2;
+    color: #424242;
+    font-size: 14px;
+}
+
+.img-tabbar li.select {
+    color: #ab8e66;
+    background: #f7f6f6;
+    border-bottom: 2px #cea861 solid;
+}
+
+.img-tabbar {
+    overflow: hidden;
+}
+
+
+/* 右边公告 */
+
+.rg-tip {
+    position: relative;
+    width: 496px;
+    height: 100%;
+    float: right;
+}
+
+.rg-tip .top-tab {
+    width: 100%;
+    height: 35px;
+}
+
+.top-tab ul {
+    display: flex;
+}
+
+.top-tab ul li {
+    float: left;
+    flex: 1;
+    height: 37px;
+    cursor: pointer;
+    color: #676767;
+    font-size: 18px;
+    border-bottom: 1px solid #e0e2e2;
+    text-align: center;
+}
+
+.top-tab ul li.select {
+    color: #1da6ba;
+    font-weight: 700;
+    border-bottom: 1px solid #1da6ba;
+}
+
+.news {
+    width: 496px;
+    height: 345px;
+}
+
+.news ul .first a {
+    color: #0da0b4;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+.news ul li:nth-child(n+1) {
+    height: 40px;
+}
+
+.news ul li:nth-child(n+2) a:hover {
+    color: #bb9a6c;
+}
+
+.news ul li span:first-child {
+    color: #bb9a6c;
+    display: inline-block;
+    width: 36px;
+    height: 20px;
+    font-size: 12px;
+    border: 1px #c5ab86 solid;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.news ul li a {
+    display: inline-block;
+    width: 370px;
+    height: 39px;
+    margin-left: 20px;
+    line-height: 39px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #424242;
+}
+
+.news ul .first {
+    padding: 0 12px;
+    height: 59px !important;
+    line-height: 59px;
+    width: 100%;
+    text-align: center;
+}
+
+.news ul li span:last-child {
+    display: inline-block;
+    width: 50px;
+    height: 39px;
+    font-size: 14px;
+    color: #9d9d9d;
+    margin-left: 8px;
+    line-height: 39px;
+}
+
+
+/* 阅读更多资讯 */
+
+.morenews {
+    display: block;
+    height: 40px;
+    background: #e3e2e2;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.morenews span:first-child {
+    color: #676767;
+    font-size: 14px;
+}
+
+.morenews span:last-child {
+    color: #7ea1a6;
+    font-size: 14px;
+}
+
+
+/* 热门活动 */
+
+.activity {
+    height: 720px;
+    margin: 50px 272.5px 0;
+    position: relative;
+}
+
+
+/* 主要活动 */
+
+.activity .left {
+    width: 820px;
+    height: 335px;
+    float: left;
+}
+
+.activity .left .nav {
+    width: 100%;
+    height: 35px;
+}
+
+.activity .left .nav .title {
+    font-size: 24px;
+    color: #0b0b0b;
+    line-height: 28px;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-top: 8px;
+    float: left;
+}
+
+.activity .left .nav .title::before {
+    content: '';
+    display: block;
+    background: #1da6ba;
+    width: 4px;
+    height: 28px;
+    position: absolute;
+    left: -6px;
+}
+
+.activity .left .nav ul {
+    float: left;
+    height: 38px;
+    margin-left: 18px;
+}
+
+.activity .left .nav ul li {
+    float: left;
+    color: #676767;
+    margin-right: 40px;
+    line-height: 37px;
+    height: 37px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.activity .left .nav ul li.select {
+    border-bottom: 2px solid #1da6ba;
+    color: #1da6ba;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.activity .left .nav a {
+    float: right;
+    font-size: 14px;
+    color: #7ea1a6;
+    height: 35px;
+    line-height: 35px;
+}
+
+
+/* 活动列表 */
+
+.actList {
+    width: 820px;
+    height: 278px;
+    margin-top: 21px;
+}
+
+.actList li {
+    float: left;
+    margin-right: 15px;
+    height: 278px;
+    width: 190px;
+    position: relative;
+}
+
+.actList li p {
+    padding: 6px 10px 4px;
+    font-size: 14px;
+    color: #424242;
+}
+
+.actList li a {
+    position: absolute;
+    bottom: 6px;
+    left: 10px;
+    color: #1da6ba;
+    font-size: 12px;
+}
+
+
+/* 游戏功能导航 */
+
+.activity .right {
+    width: 496px;
+    height: 335px;
+    float: right;
+    position: relative;
+}
+
+.activity .right ul li {
+    float: left;
+    position: relative;
+}
+
+.download {
+    width: 366px;
+    height: 168px;
+    /* left: 0;
+        top: 0; */
+    line-height: 168px;
+    font-size: 32px;
+    text-align: center;
+    background: #04a1cb;
+    /* position: absolute; */
+}
+
+.download a {
+    color: #fff;
+}
+
+.right ul .btn2 {
+    width: 118px;
+    height: 76px;
+    color: #fff;
+    line-height: 76px;
+    text-align: center;
+    background: url('../img/index-spr.png') no-repeat -193px -316px;
+    position: relative;
+    margin-left: 12px;
+}
+
+.right ul .btn3 {
+    width: 118px;
+    height: 76px;
+    color: #fff;
+    line-height: 76px;
+    text-align: center;
+    background: url('../img/index-spr.png') no-repeat -193px -316px;
+    margin: 17px 0px 0px 12px;
+}
+
+.right ul li:nth-child(n+4) a {
+    display: block;
+    width: 112px;
+    height: 68px;
+    color: #424242;
+    text-align: center;
+    line-height: 68px;
+    background: #fefefe;
+}
+
+.right ul .btn4 {
+    margin: 15px 16px 0 0;
+}
+
+.right ul .btn5 {
+    margin-top: 15px;
+}
+
+.right ul li a i {
+    display: inline-block;
+    width: 22px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.right ul li:nth-child(4) a i {
+    background: url('../img/comm-spr.png') no-repeat -316px -12px;
+}
+
+.right ul li:nth-child(5) a i {
+    background: url('../img/comm-spr.png') no-repeat -219px -72px;
+}
+
+.right ul li:nth-child(8) b {
+    background: url('../img/comm-spr.png') no-repeat -301px -46px;
+    width: 29px;
+    height: 14px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+}
+
+.right ul li:nth-child(6) a i {
+    background: url('../img/comm-spr.png') no-repeat -343px -12px;
+}
+
+.right ul li:nth-child(7) a i {
+    background: url('../img/comm-spr.png') no-repeat -193px -72px;
+}
+
+.right ul li:nth-child(8) a i {
+    background: url('../img/comm-spr.png') no-repeat -219px -72px;
+}
+
+.right ul li:nth-child(9) a i {
+    background: url('../img/comm-spr.png') no-repeat -371px -12px;
+}
+
+.right ul li:nth-child(10) a i {
+    background: url('../img/comm-spr.png') no-repeat -274px -46px;
+}
+
+.right ul li:nth-child(11) a i {
+    background: url('../img/comm-spr.png') no-repeat -193px -46px;
+}
+
+
+/* 新英雄新皮肤 */
+
+.newchampionskin {
+    width: 820px;
+    height: 254px;
+    margin-top: 51px;
+    float: left;
+}
+
+
+/* 新英雄 */
+
+.newchampion {
+    width: 402px;
+    height: 254px;
+    float: left;
+    position: relative;
+}
+
+
+/* 新皮肤 */
+
+.newskin {
+    width: 402px;
+    height: 254px;
+    margin-left: 16px;
+    float: left;
+    position: relative;
+}
+
+.newchampionskin div a {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    color: #cdbe91;
+    font-size: 12px;
+    height: 20px;
+    display: block;
+    line-height: 20px;
+    background: #000;
+}
+
+.newchampionskin div .intro {
+    position: absolute;
+    bottom: 33px;
+    left: 0;
+    color: #cdbe91;
+    font-weight: 700;
+    padding: 0 17px;
+}
+
+.newchampionskin div .name {
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    font-size: 14px;
+    padding-left: 17px;
+    color: #cfcfcf;
+}
+
+
+/* 图片底部阴影 */
+
+.newchampionskin div i {
+    background: url('../img/pic-mask-0.png') repeat;
+    height: 133px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+/* 版本导航 */
+
+.version-show {
+    width: 496px;
+    height: 255px;
+    float: right;
+    margin-top: 51px;
+}
+
+.version-show .v1 {
+    width: 240px;
+    height: 120px;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.version-show .v2 {
+    float: right;
+}
+
+.version-show .v3 {
+    float: left;
+}
+
+.version-show .v4 {
+    margin-top: 17px;
+    float: right;
+    width: 239px;
+    height: 58px;
+    text-align: center;
+}
+
+.version-show .v4 a {
+    display: block;
+    line-height: 58px;
+    background: url('../img/index-spr.png') no-repeat -193px -253px;
+    color: #fff;
+}
+
+
+/* 最新视频 */
+
+.video {
+    padding: 80px 265px 0;
+    height: 560px;
+    background: #e3e2e2;
+}
+
+.video .newVideo {
+    width: 820px;
+    height: 463px;
+    float: left;
+}
+
+
+/* 模块标题 */
+
+.video .newVideo .title {
+    width: 840px;
+    border-bottom: 1px #999 solid;
+}
+
+.video .newVideo .title h2 {
+    font-size: 24px;
+    height: 28px;
+    color: #0b0b0b;
+    line-height: 28px;
+    float: left;
+    position: relative;
+}
+
+.video .newVideo .title h2::before {
+    content: '';
+    display: block;
+    background: #1da6ba;
+    width: 4px;
+    height: 28px;
+    position: absolute;
+    left: -12px;
+    top: 2px;
+}
+
+.video .newVideo .title ul {
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+.video .newVideo .title ul li {
+    float: left;
+    letter-spacing: 1px;
+    color: #676767;
+    line-height: 35px;
+    margin-right: 40px;
+}
+
+.video .newVideo .title ul li.select {
+    color: #1da6ba;
+    border-bottom: 2px solid #1da6ba;
+}
+
+.video .newVideo .title .more {
+    line-height: 35px;
+    color: #7ea1a6;
+    font-size: 12px;
+    float: right;
+    position: relative;
+    left: -28px;
+}
+
+.video .newVideo .title .more::after {
+    content: '';
+    background: url('../img/comm-spr.png') no-repeat -213px -126px;
+    width: 15px;
+    height: 9px;
+    position: absolute;
+    right: -20px;
+    top: 12px
+}
+
+.video .newVideo .title .change {
+    font-size: 12px;
+    color: #7ea1a6;
+    display: block;
+    float: right;
+    line-height: 35px;
+    margin-right: 50px;
+    position: relative;
+    left: -28px;
+}
+
+.video .newVideo .title .change::after {
+    content: '';
+    background: url('../img/comm-spr.png') no-repeat -308px -99px;
+    width: 12px;
+    height: 13px;
+    position: absolute;
+    right: -20px;
+    top: 12px
+}
+
+
+/* 模块内容 */
+
+.video .newVideo .videoList {
+    display: block;
+    width: 840px;
+    height: 402px;
+    margin-top: 32px;
+}
+
+.video .newVideo .videoList li {
+    width: 193px;
+    height: 185px;
+    margin: 0 16px 16px 0;
+    float: left;
+    position: relative;
+}
+
+.video .newVideo .videoList li img {
+    width: 198px;
+    height: 110px;
+}
+
+.video .newVideo .videoList li a {
+    display: block;
+    height: 42px;
+    font-size: 14px;
+    line-height: 21px;
+    overflow: hidden;
+    color: #424242;
+    padding: 0 10px;
+}
+
+.videoList li span {
+    position: absolute;
+    left: 9px;
+    bottom: 4px;
+    font-size: 12px;
+    color: #919091;
+}
+
+.videoList li i {
+    position: absolute;
+    right: 13px;
+    bottom: 4px;
+    font-size: 12px;
+    color: #919091;
+    font-style: normal;
+}
+
+
+/* 热门专辑 */
+
+.video .hotprogram {
+    width: 496px;
+    height: 454px;
+    float: right;
+    position: relative;
+}
+
+
+/* 专辑标题 */
+
+.hotprogram .title {
+    float: left;
+    height: 35px;
+    width: 100%;
+}
+
+.hotprogram .title h2 {
+    font-size: 24px;
+    height: 28px;
+    color: #0b0b0b;
+    line-height: 28px;
+    float: left;
+    position: relative;
+}
+
+.hotprogram .title h2::before {
+    content: '';
+    display: block;
+    background: #1da6ba;
+    width: 4px;
+    height: 28px;
+    position: absolute;
+    left: -12px;
+    top: 2px;
+}
+
+.hotprogram .title ul {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 145px;
+    border-bottom: 1px #999 solid;
+}
+
+.hotprogram .title ul li {
+    float: left;
+    line-height: 37px;
+    margin-right: 14px;
+    height: 37px;
+    letter-spacing: 1px;
+    color: #676767;
+}
+
+
+/* 选中状态 */
+
+.hotprogram .title ul li.select {
+    color: #1da6ba;
+    border-bottom: 2px solid #1da6ba;
+}
+
+
+/* 主要内容 */
+
+.hot-content {
+    width: 100%;
+    height: 337px;
+    margin-top: 32px;
+    float: left;
+}
+
+.hot-content ul {
+    width: 513px;
+    height: 337px;
+    position: relative;
+}
+
+.hot-content ul li {
+    float: left;
+    width: 156px;
+    height: 337px;
+    position: relative;
+}
+
+.hot-content ul .l1 {
+    margin-right: 15px;
+}
+
+.hot-content ul li img {
+    width: 156px;
+    height: 212px;
+}
+
+.hot-content ul li h4 {
+    position: absolute;
+    left: 0;
+    top: 140px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+.hot-content ul li p {
+    position: absolute;
+    left: 0;
+    top: 169px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    padding: 0 7px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 30px;
+    line-height: 18px;
+}
+
+.hot-content ul li .name {
+    font-size: 14px;
+    color: #919091;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 224px;
+    padding: 0 7px;
+    height: 42px;
+    line-height: 21px;
+    overflow: hidden;
+}
+
+.hot-content ul li .author {
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 4px;
+    color: #919091;
+    position: absolute;
+    left: 0;
+    top: 280px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.hot-content ul li .author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.hotprogram .more-hotprogram {
+    float: left;
+    background: url('../img/index-spr.png') no-repeat 0 -522px;
+    color: #ab8e66;
+    width: 506px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: -5px;
+    text-align: center;
+}
+
+.hotprogram .more-hotprogram i {
+    background: url('../img/comm-spr.png') no-repeat -362px -99px;
+    display: inline-block;
+    width: 15px;
+    height: 9px;
+    margin-left: 5px;
+}
+
+
+/* 赛事中心 */
+
+.match {
+    height: 384px;
+    margin: 0 272.5px;
+    padding: 64px 0 80px;
+}
+
+
+/* 赛事类别 */
+
+.match .top-tab {
+    width: 1358px;
+    height: 35px;
+    position: relative;
+}
+
+.match .top-tab h2 {
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    box-sizing: border-box;
+    height: 28px;
+    line-height: 28px;
+    color: #0b0b0b;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.match .top-tab h2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #1da6ba;
+    width: 4px;
+    height: 28px;
+    position: absolute;
+    left: -12px;
+    top: 2px;
+}
+
+.match .top-tab ul {
+    height: 35px;
+    position: absolute;
+    left: 128px;
+    border-bottom: 1px #e0e2e2 solid;
+}
+
+.match .top-tab ul li {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    color: #676767;
+    margin-right: 54px;
+    position: relative;
+    overflow: visible;
+}
+
+.match .top-tab ul li.select {
+    border-bottom: 2px solid #1da6ba;
+    color: #1da6ba;
+}
+
+.match .top-tab .event {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 61px;
+    color: #676767;
+    font-weight: 700;
+    height: 35px;
+    line-height: 35px;
+}
+
+.match .top-tab .event img {
+    vertical-align: middle;
+}
+
+.match .top-tab .more {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 2px;
+    font-size: 12px;
+    color: #7ea1a6;
+    height: 35px;
+    line-height: 35px;
+}
+
+.match .top-tab .more i {
+    background: url('../img/comm-spr.png') no-repeat -362px -99px;
+    display: inline-block;
+    width: 15px;
+    height: 9px;
+    margin-left: 5px;
+}
+
+
+/* 赛事内容区域 */
+
+.event-content {
+    width: 1358px;
+    height: 556px;
+    margin-top: 26px;
+}
+
+
+/* 第一轮赛事 */
+
+.event-content .first {
+    width: 534px;
+    height: 303px;
+    margin-top: 20px;
+    float: left;
+}
+
+
+/* 分组  */
+
+.event-content .first .group {
+    width: 100%;
+    height: 35px;
+}
+
+.event-content .first .group h2 {
+    float: left;
+    font-size: 18px;
+    color: #0b0b0b;
+    line-height: 35px;
+}
+
+.event-content .first .group ul {
+    width: 440px;
+    height: 35px;
+    float: right;
+    border-bottom: 1px #e0e2e2 solid;
+}
+
+.event-content .first .group ul li {
+    float: left;
+    letter-spacing: 1px;
+    line-height: 37px;
+    min-width: 40px;
+    margin-right: 50px;
+}
+
+.event-content .first .group ul li.select {
+    border-bottom: 2px solid #1da6ba;
+    color: #1da6ba;
+}
+
+
+/* 比分情况 */
+
+.event-content .first .rank-score {
+    width: 534px;
+    height: 247px;
+    margin-top: 21px;
+}
+
+.event-content .first .rank-score .titleList {
+    box-sizing: border-box;
+    background: #e0e0e0;
+    height: 32px;
+    width: 100%;
+    padding: 0 18px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #151517;
+}
+
+.event-content .first .rank-score .titleList span {
+    display: inline-block;
+}
+
+.event-content .first .rank-score .titleList .s-2 {
+    width: 124px;
+    margin-left: 69px;
+}
+
+.event-content .first .rank-score .titleList .s-3 {
+    margin-left: 45px;
+    width: 100px;
+}
+
+.event-content .first .rank-score .titleList .s-4 {
+    float: right;
+}
+
+.event-content .first .rank-score .rankContent {
+    width: 100%;
+    height: 215px;
+    background: #fefefe;
+}
+
+.event-content .first .rank-score .rankContent ul {
+    width: 534px;
+    height: 100%;
+    padding: 0 18px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-content .first .rank-score .rankContent ul li {
+    flex: 1;
+    border-bottom: 1px #e0e2e2 solid;
+    box-sizing: border-box;
+}
+
+.event-content .first .rank-score .rankContent ul li:last-child {
+    border: none;
+}
+
+.event-content .first .rank-score .rankContent ul li span {
+    display: inline-block;
+    height: 100%;
+}
+
+.event-content .first .rank-score .rankContent ul li span:first-child {
+    font-size: 24px;
+    color: #b79e76;
+    width: 44px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.event-content .first .rank-score .rankContent ul li span:nth-child(2) {
+    margin-left: 55px;
+    color: #151517;
+    line-height: 54px;
+    width: 124px;
+}
+
+.event-content .first .rank-score .rankContent ul li span:nth-child(2) img {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.event-content .first .rank-score .rankContent ul li span:nth-child(3) {
+    width: 100px;
+    height: 100%;
+    line-height: 54px;
+    margin-left: 15px;
+    text-align: center;
+    color: #5f8d94;
+}
+
+.event-content .first .rank-score .rankContent ul li span:nth-child(4) {
+    width: 44px;
+    line-height: 54px;
+    height: 54px;
+    float: right;
+    text-align: center;
+    color: #5f8d94;
+}
+
+
+/* 具体战况 */
+
+.event-content .second {
+    width: 788px;
+    height: 271px;
+    float: right;
+    margin-top: 52px;
+}
+
+.event-content .second .title {
+    width: 788px;
+    height: 32px;
+    background: #e3e2e2;
+    float: left;
+}
+
+.event-content .second .title ul li {
+    float: left;
+    width: 140px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    color: #666667;
+}
+
+.event-content .second .title ul li.select {
+    color: #1da6ba;
+    border-bottom: 2px #1da6ba solid;
+    font-weight: 800;
+    background: #fbfbfb;
+}
+
+.event-content .second .match1 {
+    width: 788px;
+    height: 240px;
+    float: left;
+    flex-direction: column;
+    display: flex;
+    background: #fefefe;
+}
+
+.event-content .second .match1 li {
+    flex: 1;
+    padding-right: 30px;
+    position: relative;
+}
+
+.event-content .second .match1 li img {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.event-content .second .match1 li span {
+    display: inline-block;
+}
+
+.event-content .second .match1 li span:first-child {
+    color: #fff;
+    background: #bcbcbc;
+    font-size: 12px;
+    position: absolute;
+    top: 21px;
+    left: 24px;
+    padding: 0 3px;
+    border-radius: 3px;
+}
+
+.event-content .second .match1 li span:nth-child(2) {
+    width: 120px;
+    height: 60px;
+    margin: 0 35px 0 92px;
+    text-align: center;
+    line-height: 60px;
+    color: #151517;
+    float: left;
+}
+
+.event-content .second .match1 li span:nth-child(3) {
+    width: 110px;
+    height: 60px;
+    float: left;
+    line-height: 60px;
+    text-align: center;
+}
+
+.event-content .second .match1 li span:nth-child(4) {
+    width: 115px;
+    height: 60px;
+    float: left;
+    margin: 0 8px;
+    line-height: 60px;
+}
+
+.event-content .second .match1 li span:nth-child(4) i {
+    font-style: normal;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.event-content .second .match1 li span:nth-child(4) i:nth-child(1) {
+    width: 26px;
+    height: 33px;
+    color: #b0b0b0;
+    background: #3a3a3a;
+    font-size: 26px;
+    line-height: 60px;
+    line-height: 33px;
+}
+
+.event-content .second .match1 li span:nth-child(4) i:nth-child(2) {
+    width: 24px;
+    height: 33px;
+    margin: 0 4px;
+    line-height: 33px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.event-content .second .match1 li span:nth-child(4) i:nth-child(3) {
+    color: #b0b0b0;
+    background: #3a3a3a;
+    border-radius: 5px;
+    width: 26px;
+    height: 33px;
+    font-size: 26px;
+    line-height: 33px;
+}
+
+.event-content .second .match1 li span:nth-child(4) i.win {
+    color: #fff;
+}
+
+.event-content .second .match1 li span:nth-child(5) {
+    width: 115px;
+    height: 60px;
+    float: left;
+    margin: 0 8px;
+    line-height: 60px;
+}
+
+.event-content .second .match1 li span:nth-child(6) {
+    float: right;
+    height: 20px;
+    padding: 0 6px;
+    margin-left: 10px;
+    line-height: 18px;
+    border: 1px solid #bb9a6c;
+    font-size: 14px;
+    margin-top: 21px;
+    color: #bb9a6c;
+}
+
+.event-content .second .match1 li span:nth-child(7) {
+    float: right;
+    height: 20px;
+    padding: 0 6px;
+    margin-left: 10px;
+    line-height: 18px;
+    border: 1px solid #7ea1a6;
+    font-size: 14px;
+    margin-top: 21px;
+    color: #7ea1a6;
+}
+
+
+/* 英雄资料 */
+
+.championlist {
+    display: inline-block;
+    height: 626px;
+    background: #e3e2e2;
+    width: 100%;
+}
+
+.championlist .showlist {
+    width: 1358px;
+    margin: 66px auto;
+    height: 494px;
+}
+
+.championlist .showlist .top-tab {
+    width: 1358px;
+    height: 35px;
+    position: relative;
+}
+
+.championlist .showlist .top-tab h2 {
+    display: inline-block;
+    width: 110px;
+    height: 28px;
+    color: #0b0b0b;
+    line-height: 28px;
+    font-size: 24px;
+    font-weight: 400;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+}
+
+.championlist .showlist .top-tab h2::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background: #1da6ba;
+    width: 4px;
+    height: 28px;
+    position: absolute;
+    left: -12px;
+    top: 2px;
+}
+
+.championlist .showlist .top-tab ul {
+    height: 35px;
+    position: absolute;
+    left: 150px;
+    box-sizing: border-box;
+    width: 800px;
+    top: 3px;
+}
+
+.championlist .showlist .top-tab ul li {
+    letter-spacing: 1px;
+    color: #676767;
+    line-height: 37px;
+    float: left;
+    text-align: center;
+    width: auto;
+    position: relative;
+    min-width: 40px;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.championlist .showlist .top-tab ul li:first-child::before {
+    background: url('../img/index-spr.png') no-repeat -431px -316px;
+    width: 20px;
+    height: 19px;
+    left: -15px;
+    display: inline-block;
+    top: 10px;
+    content: '';
+    position: absolute;
+}
+
+.championlist .showlist .top-tab ul li:nth-child(n+2):before {
+    background: url('../img/index-spr.png') no-repeat -406px -316px;
+    width: 20px;
+    height: 19px;
+    left: 2px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    content: '';
+}
+
+.championlist .showlist .top-tab .more {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 2px;
+    font-size: 12px;
+    color: #7ea1a6;
+    height: 35px;
+    line-height: 45px;
+}
+
+.championlist .showlist .top-tab .more i {
+    background: url('../img/comm-spr.png') no-repeat -362px -99px;
+    display: inline-block;
+    width: 15px;
+    height: 9px;
+    margin-left: 5px;
+}
+
+.championlist .showlist .championItem {
+    width: 1395px;
+    height: 438px;
+    margin-top: 21px;
+    position: relative;
+}
+
+.championlist .showlist .championItem li {
+    width: 90px;
+    height: 100px;
+    float: left;
+    margin: 0 16px 12px 0;
+}
+
+.championlist .showlist .championItem li img {
+    display: inline-block;
+    width: 66px;
+    height: 66px;
+}
+
+.championlist .showlist .championItem li p {
+    height: 30px;
+    line-height: 30px;
+    width: 90px;
+    color: #333;
+    font-size: 12px;
+}
+
+
+/* 创作馆 */
+
+.fanart {
+    height: 572px;
+    padding: 66px 0 82px 0;
+    box-sizing: border-box;
+    margin: 0 272.5px;
+}
+
+
+/* 创作馆左边部分 */
+
+.fanart .left {
+    height: 424px;
+    width: 820px;
+    float: left;
+}
+
+.fanart .left .top-tab {
+    width: 820px;
+    height: 35px;
+    position: relative;
+}
+
+.fanart .left .top-tab h2 {
+    position: absolute;
+    top: 5px;
+    left: 6px;
+}
+
+.fanart .left .top-tab h2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #1da6ba;
+    width: 4px;
+    height: 28px;
+    position: absolute;
+    left: -12px;
+    top: 2px;
+}
+
+.fanart .left .top-tab .more {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 2px;
+    font-size: 12px;
+    color: #7ea1a6;
+    height: 35px;
+    line-height: 35px;
+}
+
+.fanart .left .top-tab .more i {
+    background: url('../img/comm-spr.png') no-repeat -362px -99px;
+    display: inline-block;
+    width: 15px;
+    height: 9px;
+    margin-left: 5px;
+}
+
+.fanart .left .content {
+    width: 840px;
+    height: 368px;
+    margin-top: 21px;
+}
+
+.fanart .left .content li {
+    float: left;
+    width: 192px;
+    height: 176px;
+    margin: 0 17px 17px 0;
+    overflow: hidden;
+}
+
+
+/* .fanart .left .content li:nth-child(n+5) {
+    margin-top: 30px;
+} */
+
+.fanart .left .content li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.fanart .left .content li a img {
+    display: block;
+    width: 192px;
+    height: 192px;
+}
+
+
+/* 创作馆右边部分 */
+
+.fanart .right {
+    width: 496px;
+    height: 424px;
+    float: right;
+}
+
+
+/* 左边专栏 */
+
+.fanart .right .main-column {
+    width: 241px;
+    height: 411px;
+    margin-top: 13px;
+    float: left;
+}
+
+.fanart .right .main-column a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 右边列表 */
+
+.fanart .right .fanart-right {
+    width: 240px;
+    height: 369px;
+    float: right;
+    margin-top: 55px;
+}
+
+.fanart .right .fanart-right li {
+    width: 240px;
+    height: 87px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.fanart .right .fanart-right li:last-child {
+    width: 100%;
+    height: 58px;
+}
+
+.fanart .right .fanart-right li img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.fanart .right .fanart-right li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    position: relative;
+    line-height: 87px;
+}
+
+.fanart .right .fanart-right li a i {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+    background: url('../img/index-spr.png') no-repeat -484px -226px;
+    margin: 0 10px;
+}
+
+
+/* 尾部开始 */
+
+.footer {
+    width: 100%;
+    height: 265px;
+    background: #e3e2e2;
+}
